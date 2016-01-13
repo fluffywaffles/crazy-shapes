@@ -13,15 +13,18 @@ html
     .tri
   
   mixin trap ()
-    .trap
+    .trap&attributes(attributes)
       .top
       .right
       .bottom
       .left
   
   body
-    +rect()
+    //+rect()
     
-    +tri()
+    //+tri()
     
-    +trap()
+    +trap().trap-1
+    +trap().trap-2
+    +trap().trap-3
+    +trap().trap-4
