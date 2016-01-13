@@ -1,0 +1,27 @@
+doctype html
+
+html
+  head
+    title Crazy Shapes UI testbed
+  
+    link(rel='stylesheet', href='./main.css')
+  
+  mixin rect ()
+    .rect
+    
+  mixin tri ()
+    .tri
+  
+  mixin trap ()
+    .trap
+      .top
+      .right
+      .bottom
+      .left
+  
+  body
+    +rect()
+    
+    +tri()
+    
+    +trap()

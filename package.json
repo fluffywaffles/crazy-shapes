@@ -1,0 +1,18 @@
+{
+  "name": "crazy-shapes",
+  "version": "0.1.0",
+  "description": "Crazy shapes UI testbed",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@skorlir",
+  "license": "ISC",
+  "devDependencies": {
+    "bify-wify": "^1.0.3",
+    "gulp": "^3.9.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-stylus": "^2.2.0"
+  }
+}
