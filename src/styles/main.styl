@@ -8,6 +8,26 @@ html, body
   left 0
   top 0
 
+.rect
+  top  calc(25% - 75px)
+  left calc(50% - 150px)
+
+  width 300px
+  height 150px
+
+  background #fba
+
+.tri
+  top  calc(75% - 240px)
+  left calc(50% - 160px)
+
+  width 0
+  height 0
+
+  border-width 160px
+  border-color transparent transparent #afa transparent
+  border-style solid
+
 .trap
   left calc(50% - 100px)
   top  calc(50% - 80px)
@@ -36,39 +56,40 @@ html, body
     right -80px
     border-color transparent transparent #abe #abe
 
-.rect
-  top  calc(25% - 75px)
-  left calc(50% - 150px)
+.trap
+  transition all ease 1s
+  .left, .right
+    transition all ease 1s
 
-  width 300px
-  height 150px
+.trap-2
+  top calc(50% - 80px - 200px)
 
-  background #fba
+.trap-3
+  top calc(50% - 80px + 200px)
 
-.tri
-  top  calc(75% - 240px)
-  left calc(50% - 160px)
-
-  width 0
-  height 0
-
-  border-width 160px
-  border-color transparent transparent #afa transparent
-  border-style solid
-
-.trap-1
+body:hover .trap-2
+  top calc(50% - 80px)
   transform rotateZ(45deg)
+  height 200px
+  .left, .right
+    border-width 50px
+    top 50px
   .left
+    left -100px
     border-color transparent darken(#abe, 10%) darken(#abe, 10%) transparent
   .right
+    right -100px
     border-color transparent transparent darken(#abe, 10%) darken(#abe, 10%)
-.trap-2
+body:hover .trap-3
+  top calc(50% - 80px)
   transform rotateZ(-45deg)
+  height 200px
+  .left, .right
+    border-width 50px
+    top 50px
   .left
+    left -100px
     border-color transparent darken(#abe, 5%) darken(#abe, 5%) transparent
   .right
+    right -100px
     border-color transparent transparent darken(#abe, 5%) darken(#abe, 5%)
-.trap-3
-  transform none
-.trap-4
-  transform none
