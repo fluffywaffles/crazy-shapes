@@ -67,29 +67,26 @@ html, body
 .trap-3
   top calc(50% - 80px + 200px)
 
+body:hover .trap-1
+  height 90px
+  .left
+    top 10px
+    transform scaleY(1.125)
+  .right
+    top 10px
+    transform scaleY(1.125)
+
 body:hover .trap-2
   top calc(50% - 80px)
   transform rotateZ(45deg)
-  height 200px
-  .left, .right
-    border-width 50px
-    top 50px
   .left
-    left -100px
     border-color transparent darken(#abe, 10%) darken(#abe, 10%) transparent
   .right
-    right -100px
     border-color transparent transparent darken(#abe, 10%) darken(#abe, 10%)
 body:hover .trap-3
   top calc(50% - 80px)
   transform rotateZ(-45deg)
-  height 200px
-  .left, .right
-    border-width 50px
-    top 50px
   .left
-    left -100px
     border-color transparent darken(#abe, 5%) darken(#abe, 5%) transparent
   .right
-    right -100px
     border-color transparent transparent darken(#abe, 5%) darken(#abe, 5%)
